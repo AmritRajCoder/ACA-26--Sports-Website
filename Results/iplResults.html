@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../MS.png" type="image/x-icon">
+    <link rel="stylesheet" href="styleIplResults.css">
+    <title>IPL Results</title>
+</head>
+<link rel="stylesheet" type="text/css" href="styleIplResults.css">
+<body>
+        <header class="header">
+                <nav id="navbar">
+                  <div class="container">
+                    <ul>
+                        <li><a href="../Home/index.html#home" target="_blank">HOME</a></li>
+                        <li><a href="../Home/index.html#about" target="_blank">ABOUT</a></li>
+                        <li><a href="../Home/index.html#achieve" target="_blank">ACHIEVEMENTS</a></li>
+                        <li><a href="../Timeline/timeline.html" class="black" target="_blank">JOURNEY</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                
+            </header>
+<h2>Please select year to find out IPL ranks:</h2>
+
+<form id="datavalue">
+	<p>
+      <select id="year">
+		<option value="year" class="ytext" disabled selected >Year</option>
+          
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+      </select>
+
+  </p>
+  <p>
+      <input type="submit" >
+      </p>
+      <h3 style="color:white; margin-top: 40px;"> <span id="result1"></span><br></h3>
+      <h3 style="color:white"> <span id="result2"></span><br></h3>
+      <h3 style="color:white"> <span id="result3"></span><br></h3>
+      <h3 style="color:white"> <span id="result4"></span><br></h3>
+      <h3 style="color:white"> <span id="result5"></span><br></h3>
+      <h3 style="color:white"> <span id="result6"></span><br></h3>
+      <h3 style="color:white"> <span id="result7"></span><br></h3>
+      <h3 style="color:white"> <span id="result8"></span><br></h3>
+
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+<script src="scriptIplResults.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar{
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+    padding-bottom: 25px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+header ul li{
+    list-style: none;
+    padding-top: 25px;
+    margin: 0;
+}
+
+header ul li a{
+    font-weight: bold;
+    color: #FF00F0;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition-duration: 0.25s;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+header ul li a:hover{
+    border-bottom: 4px solid #39FF14;
+}
+.red{
+    color: #0087FF;
+}
+.white{
+    color: #34BD00;
+}
+body 
+{
+  background-color: #000000;
+  background-image: url("https://www.flaticon.com/svg/static/icons/svg/351/351410.svg");
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+} 
+
+.intro 
+{
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: White;
+}
+
+.timeline ul {
+  list-style-type:none;
+  padding: 50px 0;
+}
+
+.timeline ul li 
+{
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+  z-index: -1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/photos/closeup-of-red-cricket-ball-and-bat-sitting-on-grass-picture-id177427917?k=6&m=177427917&s=612x612&w=0&h=-q2U1BYuDKX2qQa7DcwTQ6PhkJifJcuuwo1HlpCjfC8=) no-repeat center center;
+  border-radius: 20px;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(0, 100px, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  transform: translate3d(0, 100px, 0);
+}
+
+time 
+{
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline ul li div 
+{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s linear;
+}
+
+.timeline ul li.in-view div 
+{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}

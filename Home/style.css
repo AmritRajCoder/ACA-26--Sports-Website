@@ -1,0 +1,128 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+  width: 100vw;
+}
+nav {
+    position: relative;
+    z-index: 1;
+}
+#navbar{
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+    padding-bottom: 25px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+header ul li{
+    list-style: none;
+    padding-top: 25px;
+    margin: 0;
+}
+
+header ul li a{
+    font-weight: bold;
+    color: #00FFFF;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition-duration: 0.25s;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.black{
+    color: black;
+}
+.black:hover{
+    border-bottom: 4px solid #00FFFF;
+}
+
+header ul li a:hover{
+    border-bottom: 4px solid black;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: url(Dhoni.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+header h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 110%;
+    font-weight: 550;
+    color: white;
+    transform: translateX(-75px);
+}
+
+.msd{
+    transform: translate(140px, -85px);
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+
+header .content{
+    font-size: 240%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#achieve{
+    background-image: url(https://img.theweek.in/content/dam/week/news/sports/images/2019/6/2/dhoni-wc-india-afp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+#achieve h2{
+    font-size: 235%;
+    margin-bottom: 5vh;
+    margin-left: 20px;
+}
+.ani1 ul{
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.ani1 ul li div{
+    color: #b3ff00;
+    font-size: 21px;
+}
+.ani1 ul li{
+    margin: 18px;
+}
